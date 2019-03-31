@@ -6,4 +6,4 @@ phases:
   post_build:
     commands:
       - echo Build completed on 'date'
-      - aws s3 sync --delete website/ "s3://${BUCKET_NAME}"
+      - aws s3 sync --delete website/ "s3://${www.bjones.cloud}"
