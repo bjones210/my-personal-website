@@ -1,49 +1,71 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="AWS projects and NBA DFS Projections">
-    <meta name="keywords" content="aws, github, nba dfs, dfs projections">
-    <meta name="author" content="Bryce Jones">
-    <title>DFS Projections</title>
-    <link rel="stylesheet" href="/css/style.css">
-     <script src="/js/main.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div id="branding">
-          <h1>Bryce Jones</h1>
-          <div class="s-m">
-              <a href="#"><i class="fab fa-twitter-square"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="AWS projects and Github Portofolio">
+  <meta name="keywords" content="aws, github, aws cloudformation, aws ebs">
+  <meta name="author" content="Bryce Jones">
+  <title>AWS Projects</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/main.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1>Bryce Jones</h1>
+        <div class="s-m">
+          <a href="https://twitter.com/timduncanstan" target="_blank"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.linkedin.com/in/bryce-jones-55901b183" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/bjones210" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="current"><a href="projections.html">DFS Projections</a></li>
-            <li><a href="portfolio.html">Github</a></li>
-          </ul>
-        </nav>
       </div>
-    </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="current"><a href="projections.html">AWS Projects</a></li>
+          <li><a href="portfolio.html">Github</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
 
-    <section id="main">
-      <div class="container">
-        <h1> NBA DFS Projections</h1>
-          <p>Insert info about projections</p>
-      </div>
-    </section>
-    <footer>
-      <p>Footer Info</p>
-    </footer>
+  <section id="main">
+    <div class="container">
+      <h1>AWS Projects</h1>
+      <p>A collection of projects I have completed or am working on. Page will be updated weekly with completed
+        projects. If you are interested in using any of the templates below or would like me to create a custom one for
+        you below please contact me on Twitter or LinkedIn. I do not charge for my services at this time so in lieu of
+        any payments please donate whatever you think my work is worth to a charity of your choice.</p>
+      <br>
+      <h3>1. Personal Website Template</h3>
+      <p>Template of my personal static website hosted on S3 using a custom domain name with Route53. A CloudFront
+        distribution sits in front of the S3 bucket to serve static content and a CloudFormation stack is saved to S3 as
+        a template in case of the need for disaster recovery.</p>
+      <img src="img/template1-designer.png" style="width:900px;height:500px;">
+      <br>
+      <h3>2. Web Server Template</h3>
+      <p>Template of a web server inside of a simple VPC setup. The VPC consists of an EC2 instance, a public subnet
+        with a security group to allow for HTTP/SSH access, a route table attached to determine where network traffic is
+        to be routed, and an internet gateway attached to the VPC to allow outside internet access from the VPC.</p>
+      <img src="img/WebServerTemplate-designer.png" style="width:900px;height:500px;">
+    </div>
+  </section>
+  <footer>
+    <p>
+      <!--insertfooter-->
+    </p>
+  </footer>
 
-  </body>
+</body>
+
 </html>
